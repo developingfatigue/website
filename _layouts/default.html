@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/default.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  </head>
+  <body>
+    <ul class="flex-container">
+      <li class="flex-item header">
+        <div class="background">
+          <h1>Developing Fatigue</h1>
+        </div>
+      </li>
+      <li class="flex-item kris">
+        <img class="circle" src="{{ site.baseurl}}/assets/kris.jpg" />
+        <div class="text">
+          <h2>Kris Van Houten</h2>
+          <div><a href="https://twitter.com/krivaten">@krivaten</a></div>
+          <div>christian, husband, father, introvert, bookworm, developer, designer</div>
+        </div>
+      </li>
+      <li class="flex-item toran">
+        <img class="circle" src="{{ site.baseurl}}/assets/toran.jpg" />
+        <div class="text">
+          <h2>Toran Billups</h2>
+          <div><a href="https://twitter.com/toranb">@toranb</a></div>
+          <div>test-driven / javascript / ember / redux</div>
+        </div>
+      </li>
+      <li class="flex-item brandon">
+        <img class="circle" src="{{ site.baseurl}}/assets/brandon.png" />
+        <div class="text">
+          <h2>Brandon Williams</h2>
+          <div><a href="https://twitter.com/williamsbdev">@williamsbdev</a></div>
+          <div>Vim, tmux, Unix, Docker, AWS, Python</div>
+        </div>
+      </li>
+      <li class="flex-item footer">
+      </li>
+    </ul>
+  </body>
+</html>
