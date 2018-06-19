@@ -9,7 +9,7 @@ body,button,html,input {
   color:#5e5e5e;
 }
 body {
-  background-color:#e0e4e7;
+  background-color:#e4ebf3;
   font-size:1em;
   line-height:1.73333;
   margin:0;
@@ -43,9 +43,6 @@ body {
   font-size: 4em;
   margin-bottom: -10vw;
 }
-.hosts h3 {
-  font-size: 2em;
-}
 .slogan {
   flex: 1 100%;
   background: #fff;
@@ -59,15 +56,16 @@ body {
 }
 .header {
   flex: 1 50%;
+  background-color: #39588f;
 }
 .flex-item {
   text-align: center;
-  color: #5e5e5e;
+  color: #191919;
   font-size: 1.75em;
 }
 .flex-item h2 {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .kris, .brandon, .toran {
   padding-top: 10vw;
@@ -87,10 +85,14 @@ h1 {
   line-height: 1.2em;
 }
 .background {
-  width: 100%;
-  min-height: 40vh;
+  margin: auto;
+  width: 98vw;
+  height: 55vw;
+  max-width: 768px;
+  max-height: 432px;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  margin-bottom: 4px;
   background-image: url("/assets/background.jpg");
 }
 .circle {
