@@ -1,6 +1,5 @@
 title: developingfatigue
 email: toranb@gmail.com
-description: "Software development podcast for the aged out"
+description: "Software development podcast with a focus on the human side of programming"
 url: "https://developingfatigue.fm"
-permalink: /:title/
 redirects: yes
