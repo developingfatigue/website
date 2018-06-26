@@ -12,7 +12,7 @@
     <ul class="flex-container">
       <li class="flex-item header">
         <div class="background">
-          <h1>Developing Fatigue Podcast</h1>
+          <h1><a href="https://developingfatigue.fm/">Developing Fatigue Podcast</a></h1>
         </div>
         <nav class="podcast-nav">
           <ul>
@@ -58,7 +58,7 @@
           <h2>Shows</h2>
           <ul class="episode__links">
             {% for post in site.posts %}
-              <li><span class="date">{{post.date | date: '%B %d, %Y'}}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+              <li><span class="date">{{post.date | date: '%B %d, %Y'}}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
           </ul>
         </div>

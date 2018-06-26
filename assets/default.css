@@ -21,6 +21,10 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.background a {
+  color: #fff;
+  text-decoration: none;
+}
 .header {
   flex: 1 1 auto;
   background-color: #39588f;
@@ -69,6 +73,9 @@ h2 {
   font-size: 18px;
   text-align: center;
   padding-bottom: 20px;
+}
+.podcast-episodes a {
+  text-decoration: none;
 }
 .podcast-episodes h2 {
   padding-top: 20px;
