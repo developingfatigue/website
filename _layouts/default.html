@@ -1,73 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Developing Fatigue Podcast</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/default.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/font-awesome/all.css">
-    <link rel="canonical" href="{{ page.url }}">
-  </head>
-  <body>
-    <ul class="flex-container">
-      <li class="flex-item header">
-        <div class="background">
-          <h1><a href="https://developingfatigue.fm/">Developing Fatigue Podcast</a></h1>
-        </div>
-        <nav class="podcast-nav">
-          <ul>
-            <li><a class="podcast-site-link" data-hint="Listen on Apple Podcasts" target="_blank" href="https://itunes.apple.com/us/podcast/developing-fatigue/id1400600307"><i class="fa fa-podcast"></i></a></li>
-            <li><a class="podcast-site-link" data-hint="Listen on Google Play" target="_blank" href="https://play.google.com/music/listen?u=0#/ps/Idkygjwjgdvrxhlzfauvxtz4jmi"><i class="fa fa-play-circle"></i></a></li>
-            <li><a class="podcast-site-link" data-hint="Listen on Overcast" target="_blank" href="https://overcast.fm/itunes1400600307/developing-fatigue"><i class="fa fa-broadcast-tower"></i></a></li>
-            <li><a class="podcast-site-link" data-hint="Subscribe via RSS" target="_blank" href="http://developingfatigue.libsyn.com/rss"><i class="fa fa-rss"></i></a></li>
-          </ul>
-        </nav>
-      </li>
-      <li class="flex-item links">
-        <div class="hosts">
-          <ul class="host__links">
-            <li class="kris host__link">
-              <img class="circle" src="{{ site.baseurl}}/assets/kris.jpg" />
-              <div class="text">
-                <h2>Kris Van Houten</h2>
-                <div><a href="https://twitter.com/krivaten">@krivaten</a></div>
-                <div>The Beard</div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Developing Fatigue Podcast</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/default.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/font-awesome/all.css">
+  <link rel="canonical" href="{{ page.url }}">
+</head>
+
+<body>
+  <ul class="flex-container">
+    <li class="flex-item header">
+      <div class="background">
+        <h1>
+          <a href="https://developingfatigue.fm/">Developing Fatigue Podcast</a>
+        </h1>
+      </div>
+      <nav class="podcast-nav">
+        <ul>
+          <li>
+            <a class="podcast-site-link" title="Listen on Apple Podcasts" target="_blank" href="https://itunes.apple.com/us/podcast/developing-fatigue/id1400600307">
+              <i class="fa fa-podcast"></i>
+            </a>
+          </li>
+          <li>
+            <a class="podcast-site-link" title="Listen on Google Play" target="_blank" href="https://play.google.com/music/listen?u=0#/ps/Idkygjwjgdvrxhlzfauvxtz4jmi">
+              <i class="fa fa-play-circle"></i>
+            </a>
+          </li>
+          <li>
+            <a class="podcast-site-link" title="Listen on Overcast" target="_blank" href="https://overcast.fm/itunes1400600307/developing-fatigue">
+              <i class="fa fa-broadcast-tower"></i>
+            </a>
+          </li>
+          <li>
+            <a class="podcast-site-link" title="Subscribe via RSS" target="_blank" href="http://developingfatigue.libsyn.com/rss">
+              <i class="fa fa-rss"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </li>
+    <li class="flex-item links">
+      <div class="hosts">
+        <ul class="host__links">
+          <li class="kris host__link">
+            <img class="circle" src="{{ site.baseurl}}/assets/kris.jpg" />
+            <div class="text">
+              <h2>Kris Van Houten</h2>
+              <div>
+                <a href="https://twitter.com/krivaten">@krivaten</a>
               </div>
-            </li>
-            <li class="toran host__link">
-              <img class="circle" src="{{ site.baseurl}}/assets/toran.jpg" />
-              <div class="text">
-                <h2>Toran Billups</h2>
-                <div><a href="https://twitter.com/toranb">@toranb</a></div>
-                <div>The Politician</div>
+              <div>The Beard</div>
+            </div>
+          </li>
+          <li class="toran host__link">
+            <img class="circle" src="{{ site.baseurl}}/assets/toran.jpg" />
+            <div class="text">
+              <h2>Toran Billups</h2>
+              <div>
+                <a href="https://twitter.com/toranb">@toranb</a>
               </div>
-            </li>
-            <li class="brandon host__link">
-              <img class="circle" src="{{ site.baseurl}}/assets/brandon.png" />
-              <div class="text">
-                <h2>Brandon Williams</h2>
-                <div><a href="https://twitter.com/williamsbdev">@williamsbdev</a></div>
-                <div>The Captain</div>
+              <div>The Politician</div>
+            </div>
+          </li>
+          <li class="brandon host__link">
+            <img class="circle" src="{{ site.baseurl}}/assets/brandon.png" />
+            <div class="text">
+              <h2>Brandon Williams</h2>
+              <div>
+                <a href="https://twitter.com/williamsbdev">@williamsbdev</a>
               </div>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="flex-item shows">
-        <div class="podcast-episodes">
-          <h1 class="ribbon">
-             <strong class="ribbon-content">Shows</strong>
-          </h1>
-          <ul class="episode__links">
-            {% for post in site.posts %}
-              <li>
-                <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
-                <div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </body>
+              <div>The Captain</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="flex-item shows">
+      <div class="podcast-episodes">
+        <h1 class="ribbon">
+          <strong class="ribbon-content">Shows</strong>
+        </h1>
+        <ul class="episode__links">
+          {% for post in site.posts %}
+          <li>
+            <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
+            <div class="title">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </li>
+  </ul>
+</body>
+
 </html>
